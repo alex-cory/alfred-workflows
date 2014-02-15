@@ -106,7 +106,7 @@ by [@TylerEich](https://github.com/TylerEich)
 
 [domainr]: https://github.com/alex-cory/alfred-workflow/blob/master/domainr.png?raw=true "Sample result"
 [caniuse]: https://raw.github.com/willfarrell/alfred-caniuse-workflow/master/screenshots/caniuse-browser.png "Sample result"
-[dash]:   "Sample result"
+[dash]: http://imageshack.us/a/img827/9299/1iqm.png  "Sample result"
 [encode]: https://raw.github.com/willfarrell/alfred-encode-decode-workflow/master/screenshots/encode.png  "Sample result"
 [symbols]:http://imageshack.us/a/img837/6348/vqkk.gif
 [fontawesome]: http://gifzo.net/ZqCN4wKUcq.gif "Sample result"
