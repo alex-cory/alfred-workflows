@@ -10,11 +10,12 @@ Run [Monkey Patch](https://github.com/BenziAhamed/monkeypatch-alfred) using the 
 
 ## Workflows
 
-### [Domainr](https://github.com/willfarrell/alfred-github-workflow) ([Download](https://raw.github.com/willfarrell/alfred-github-workflow/master/Github.alfredworkflow))
-by [@willfarrell](https://github.com/willfarrell)
+### [Domainr](https://github.com/dingyi/Alfred-Workflows) ([Download](https://github.com/dingyi/Alfred-Workflows/raw/master/Domainr/Domainr.alfredworkflow))
+by [@dingyi](https://github.com/dingyi)
 
-Searching Github for gists, repos, user repos, or repos starred by a user. 5000 requests per hour supported.
-![alt text][github]
+Search for domains to see if the are available! It will show green if available, red if not, and yellow if maybe.
+![alt text][domainr]
+
 
 
 ### [Github](https://github.com/willfarrell/alfred-github-workflow) ([Download](https://raw.github.com/willfarrell/alfred-github-workflow/master/Github.alfredworkflow))
@@ -103,6 +104,7 @@ Using the keywords `encode {query}` or `decode {query}`, will transform your que
 ### [Colors](https://github.com/TylerEich/Alfred-Extras) ([Download](https://github.com/TylerEich/Alfred-Extras/blob/master/Workflows/Colors.alfredworkflow))
 by [@TylerEich](https://github.com/TylerEich)
 
+[domainr]: https://github.com/alex-cory/alfred-workflow/blob/master/domainr.png?raw=true "Sample result"
 [caniuse]: https://raw.github.com/willfarrell/alfred-caniuse-workflow/master/screenshots/caniuse-browser.png "Sample result"
 [dash]:   "Sample result"
 [encode]: https://raw.github.com/willfarrell/alfred-encode-decode-workflow/master/screenshots/encode.png  "Sample result"
