@@ -10,6 +10,13 @@ Run [Monkey Patch](https://github.com/BenziAhamed/monkeypatch-alfred) using the 
 
 ## Workflows
 
+### [Domainr](https://github.com/willfarrell/alfred-github-workflow) ([Download](https://raw.github.com/willfarrell/alfred-github-workflow/master/Github.alfredworkflow))
+by [@willfarrell](https://github.com/willfarrell)
+
+Searching Github for gists, repos, user repos, or repos starred by a user. 5000 requests per hour supported.
+![alt text][github]
+
+
 ### [Github](https://github.com/willfarrell/alfred-github-workflow) ([Download](https://raw.github.com/willfarrell/alfred-github-workflow/master/Github.alfredworkflow))
 by [@willfarrell](https://github.com/willfarrell)
 
