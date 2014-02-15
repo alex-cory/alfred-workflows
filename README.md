@@ -104,6 +104,7 @@ Using the keywords `encode {query}` or `decode {query}`, will transform your que
 ### [Colors](https://github.com/TylerEich/Alfred-Extras) ([Download](https://github.com/TylerEich/Alfred-Extras/blob/master/Workflows/Colors.alfredworkflow))
 by [@TylerEich](https://github.com/TylerEich)
 
+[Dev Doctor]: http://imageshack.us/a/img843/209/xly.gif "Sample result"
 [domainr]: https://github.com/alex-cory/alfred-workflow/blob/master/domainr.png?raw=true "Sample result"
 [caniuse]: https://raw.github.com/willfarrell/alfred-caniuse-workflow/master/screenshots/caniuse-browser.png "Sample result"
 [dash]: http://imageshack.us/a/img827/9299/1iqm.png  "Sample result"
