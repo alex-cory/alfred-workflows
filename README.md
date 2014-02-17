@@ -10,6 +10,16 @@ Run [Monkey Patch](https://github.com/BenziAhamed/monkeypatch-alfred) using the 
 
 ## Workflows
 
+### [Key Clue Search](https://github.com/zhaocai/alfred2-keylue-workflow)([Download](https://github.com/zhaocai/alfred2-keylue-workflow/archive/master.zip))
+
+by [@zhaocai](https://github.com/zhaocai)
+
+Search and control menu bar items while also being able to see what keyboard shortcuts control what.  Awesome if you want to learn the keyboard shortcuts of an application.
+
+![alt text][key clue]
+
+
+
 ### [Domainr](https://github.com/dingyi/Alfred-Workflows) ([Download](https://github.com/dingyi/Alfred-Workflows/raw/master/Domainr/Domainr.alfredworkflow))
 by [@dingyi](https://github.com/dingyi)
 
@@ -115,6 +125,7 @@ Using the keywords `encode {query}` or `decode {query}`, will transform your que
 ### [Colors](https://github.com/TylerEich/Alfred-Extras) ([Download](https://github.com/TylerEich/Alfred-Extras/blob/master/Workflows/Colors.alfredworkflow))
 by [@TylerEich](https://github.com/TylerEich)
 
+[key clue]: http://imageshack.us/a/img208/2158/w36.gif "Sample result"
 [share]: http://goo.gl/iityYs "Sample result"
 [Dev Doctor]: http://imageshack.us/a/img843/209/xly.gif "Sample result"
 [domainr]: https://github.com/alex-cory/alfred-workflow/blob/master/domainr.png?raw=true "Sample result"
