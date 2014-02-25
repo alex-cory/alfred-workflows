@@ -1,0 +1,10 @@
+
+Download: 
+User Guide: 1st, weather search （for example: weather search beijing）will get a id, then: weather location <id> setting the default ID，weather unit, F or C,after all, you just need input: weather 
+show the climate details.
+
+weather - (need at least Alfred 1.0 )，
+weather about - show about the plug-in info
+weather help - show the help info
+weather version - show the version
+weather changelog - show change
