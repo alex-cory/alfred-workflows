@@ -10,6 +10,16 @@ Run [Monkey Patch](https://github.com/BenziAhamed/monkeypatch-alfred) using the 
 
 ## Workflows
 
+### [Key Clue Search](https://github.com/zhaocai/alfred2-keylue-workflow)([Download](https://github.com/zhaocai/alfred2-keylue-workflow/archive/master.zip))
+
+by [@zhaocai](https://github.com/zhaocai)
+
+Search and control menu bar items while also being able to see what keyboard shortcuts control what.  Awesome if you want to learn the keyboard shortcuts of an application.
+
+![alt text][key clue]
+
+
+
 ### [Domainr](https://github.com/dingyi/Alfred-Workflows) ([Download](https://github.com/dingyi/Alfred-Workflows/raw/master/Domainr/Domainr.alfredworkflow))
 by [@dingyi](https://github.com/dingyi)
 
@@ -23,6 +33,17 @@ by [@willfarrell](https://github.com/willfarrell)
 
 Searching Github for gists, repos, user repos, or repos starred by a user. 5000 requests per hour supported.
 ![alt text][github]
+
+
+### [Share](http://www.alfredforum.com/topic/1805-share-using-mountain-lion-built-in-sharing-version-111/) ([Download](https://raw.github.com/vdesabou/alfred-mountain-lion-builtin-sharing/master/MountainLionBuilt-inSharing.alfredworkflow))
+by[@vdesabou](https://github.com/vdesabou)
+
+This workflow is using the amazing command line terminal-share
+You can call directly share command (or use a hotkey) if you just want to share a message. If you want to share a file (image, video or any other kind), you can select it using a File Action, or set a hotkey. It currently supports all services except sinaweibo,youku and tudou (I can add them in a future release). Based on the type of the selected file, services proposed will change.
+
+**Commands Included:** `share {query}` (default), 
+
+![alt text][share]
 
 
 
@@ -104,6 +125,8 @@ Using the keywords `encode {query}` or `decode {query}`, will transform your que
 ### [Colors](https://github.com/TylerEich/Alfred-Extras) ([Download](https://github.com/TylerEich/Alfred-Extras/blob/master/Workflows/Colors.alfredworkflow))
 by [@TylerEich](https://github.com/TylerEich)
 
+[key clue]: http://imageshack.us/a/img208/2158/w36.gif "Sample result"
+[share]: http://goo.gl/iityYs "Sample result"
 [Dev Doctor]: http://imageshack.us/a/img843/209/xly.gif "Sample result"
 [domainr]: https://github.com/alex-cory/alfred-workflow/blob/master/domainr.png?raw=true "Sample result"
 [caniuse]: https://raw.github.com/willfarrell/alfred-caniuse-workflow/master/screenshots/caniuse-browser.png "Sample result"
