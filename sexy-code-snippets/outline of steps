@@ -1,0 +1,26 @@
+Download a copy of David Ferguson's workflows library (see libraries and helpers thread pinned in this forum). Include that.
+ 
+Create a workflow with just a script filter for now. In it, have it be bash, and just have the command be `php snippets.php`. Have no argument selected.
+ 
+Create the snippets.php file in the workflow directory. Include David's workflows.
+ 
+Start a "first run" function that checks to make sure the data directory exists, and, if not, create it. Make sure that the data directory contains a settings file. If not, create the file and open it in a text editor (just use some exec($cmd) functions to do this). It'll be easiest to have the settings file be some json (so you can use json_decode) with just a user: and key: fields.
+ 
+Use those and query github to get a list of all of the gists, and bring those back into an array.
+ 
+Use a foreach statement on each row, make sure that you have use the $key => $value in that statement:
+  Do a preg_match on the name of the gist to see if "#snippet" is in the name. If there isn't a match, then unset($gists[$key]); You should then have all of your gists that match the snippet.
+ 
+Use the add_result (or whatever the object method is) from the workflow library to add all of the results to the workflow object constructed (see how David's library works). Then "echo $w->toxml()"; That should provide you with the feedback. Use the raw URL of the gist as the argument.
+ 
+Then, try to run the workflow. If you get a list of gists in Alfred, you're on the right track.
+ 
+Now, go back and change the script filter to have "argument required" in there, and change the command to `php snippets.php {query}`. Now, look into having some fun with $argv processing in the PHP script in order to filter out more results.
+ 
+Create a new action in Alfred that runs a script.
+Have it be PHP. Then, have the contents akin to something like:
+echo file_get_contents("{query}");
+ 
+Then, add in a copy to clipboard action in Alfred. For the contents, have it be, simply {query}. Then check the box that says "automatically paste to ...".
+ 
+That should be it.
