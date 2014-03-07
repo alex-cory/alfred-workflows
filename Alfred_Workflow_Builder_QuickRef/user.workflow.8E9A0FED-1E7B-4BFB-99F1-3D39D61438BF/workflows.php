@@ -4,17 +4,17 @@
 * Description: 	This PHP class object provides several useful functions for retrieving, parsing,
 * 				and formatting data to be used with Alfred 2 Workflows.
 * Author: 		David Ferguson (@jdfwarrior)
-* Revised: 		6/6/2013
-* Version:		0.3.3
+* Revised: 		2/9/2013
+* Version:		0.3
 */
 class Workflows {
 
-	private $cache;   // returns path to cache
-	private $data;    // returns path to data directory
-	private $bundle;  // returns bundle id
-	private $path;    // returns path to your workflow
-	private $home; 	  // returns path to home
-	private $results; // returns array of available result items
+	private $cache;
+	private $data;
+	private $bundle;
+	private $path;
+	private $home;
+	private $results;
 
 	/**
 	* Description:
@@ -28,7 +28,7 @@ class Workflows {
 	function __construct( $bundleid=null )
 	{
 		$this->path = exec('pwd');
-		$this->home = exec('printf "$HOME"');
+		$this->home = exec('printf $HOME');
 
 		if ( file_exists( 'info.plist' ) ):
 			$this->bundle = $this->get( 'bundleid', 'info.plist' );
@@ -184,14 +184,9 @@ class Workflows {
 			$c_keys = array_keys( $b );						// Grab all the keys for that item
 			foreach( $c_keys as $key ):						// For each of those keys
 				if ( $key == 'uid' ):
-					if ( $b[$key] === null || $b[$key] === '' ):
-						continue;
-					else:
-						$c->addAttribute( 'uid', $b[$key] );
-					endif;
+					$c->addAttribute( 'uid', $b[$key] );
 				elseif ( $key == 'arg' ):
 					$c->addAttribute( 'arg', $b[$key] );
-					$c->$key = $b[$key];
 				elseif ( $key == 'type' ):
 					$c->addAttribute( 'type', $b[$key] );
 				elseif ( $key == 'valid' ):
@@ -199,11 +194,7 @@ class Workflows {
 						$c->addAttribute( 'valid', $b[$key] );
 					endif;
 				elseif ( $key == 'autocomplete' ):
-					if ( $b[$key] === null || $b[$key] === '' ):
-						continue;
-					else:
-						$c->addAttribute( 'autocomplete', $b[$key] );
-					endif;
+					$c->addAttribute( 'autocomplete', $b[$key] );
 				elseif ( $key == 'icon' ):
 					if ( substr( $b[$key], 0, 9 ) == 'fileicon:' ):
 						$val = substr( $b[$key], 9 );
@@ -377,7 +368,20 @@ class Workflows {
 		exec('mdfind "'.$query.'"', $results);
 		return $results;
 	}
-
+	
+	public function delete( $a )
+	{
+		if ( file_exists( $a ) ):
+			if ( file_exists( $this->path.'/'.$a ) ):
+				unlink($this->path.'/'.$a);
+			endif;
+		elseif ( file_exists( $this->data."/".$a ) ):
+			unlink($this->data."/".$a);
+		elseif ( file_exists( $this->cache."/".$a ) ):
+			unlink($this->cache."/".$a);
+		endif;
+	}
+	
 	/**
 	* Description:
 	* Accepts data and a string file name to store data to local file as cache
@@ -420,7 +424,7 @@ class Workflows {
 	* @return false if the file cannot be found, the file data if found. If the file
 	*			format is json encoded, then a json object is returned.
 	*/
-	public function read( $a, $array = false )
+	public function read( $a )
 	{
 		if ( file_exists( $a ) ):
 			if ( file_exists( $this->path.'/'.$a ) ):
@@ -433,15 +437,28 @@ class Workflows {
 		else:
 			return false;
 		endif;
-
+		
 		$out = file_get_contents( $a );
-		if ( !is_null( json_decode( $out ) ) && !$array ):
+		if ( !is_null( json_decode( $out ) ) ):
 			$out = json_decode( $out );
-		elseif ( !is_null( json_decode( $out ) ) && !$array ):
-			$out = json_decode( $out, true );
 		endif;
 
 		return $out;
+	}
+	
+	public function filetime( $a )
+	{
+		if ( file_exists( $a ) ):
+			if ( file_exists( $this->path.'/'.$a ) ):
+				return filemtime($this->path.'/'.$a);
+			endif;
+		elseif ( file_exists( $this->data."/".$a ) ):
+			return filemtime($this->data.'/'.$a);
+		elseif ( file_exists( $this->cache."/".$a ) ):
+			return filemtime($this->cache.'/'.$a);
+		endif;
+		
+		return false;
 	}
 
 	/**
@@ -470,7 +487,7 @@ class Workflows {
 			'autocomplete' => $auto,
 			'type' => $type
 		);
-
+		
 		if ( is_null( $type ) ):
 			unset( $temp['type'] );
 		endif;

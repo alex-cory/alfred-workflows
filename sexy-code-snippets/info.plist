@@ -5,7 +5,30 @@
 	<key>bundleid</key>
 	<string>AleXander123</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>0983E88C-AE37-4475-914A-D688758D6EF6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>16039760-F173-4AB8-9C73-DA7401D5DE23</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>2B1872DA-C5B8-45DC-A19D-EE654F6EC60D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7786253A-75E5-4377-8D9B-F43F78622ED9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Alex-Cory</string>
 	<key>description</key>
@@ -16,6 +39,48 @@
 	<string>Gist Sexy Snippets</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>gis set username</string>
+				<key>script</key>
+				<string></string>
+				<key>title</key>
+				<string>Set Username</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B95AC13F-AEBA-481C-B809-B4792DC2F70E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>95141CEE-C3DD-496E-9B91-2A20954CD212</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -58,6 +123,42 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>rsync -avz ~/Library/Application\ Support/Alfred\ 2/Alfred.alfredpreferences/workflows/user.workflow.9714B296-EC42-476C-B6EC-C05AFA3C04DE/ ~/Google\ Drive/Developer/git\ repositories/alfred-workflow/sexy-code-snippets/</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7786253A-75E5-4377-8D9B-F43F78622ED9</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>gss sync</string>
+				<key>text</key>
+				<string>Sync Alfred Folder to Local git Alfred Folder</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2B1872DA-C5B8-45DC-A19D-EE654F6EC60D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -66,12 +167,32 @@
 		<key>0983E88C-AE37-4475-914A-D688758D6EF6</key>
 		<dict>
 			<key>ypos</key>
-			<real>180</real>
+			<real>270</real>
 		</dict>
 		<key>16039760-F173-4AB8-9C73-DA7401D5DE23</key>
 		<dict>
 			<key>ypos</key>
-			<real>190</real>
+			<real>270</real>
+		</dict>
+		<key>2B1872DA-C5B8-45DC-A19D-EE654F6EC60D</key>
+		<dict>
+			<key>ypos</key>
+			<real>480</real>
+		</dict>
+		<key>7786253A-75E5-4377-8D9B-F43F78622ED9</key>
+		<dict>
+			<key>ypos</key>
+			<real>480</real>
+		</dict>
+		<key>95141CEE-C3DD-496E-9B91-2A20954CD212</key>
+		<dict>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
+		<key>B95AC13F-AEBA-481C-B809-B4792DC2F70E</key>
+		<dict>
+			<key>ypos</key>
+			<real>30</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.build-awf.alc</string>
+	<key>connections</key>
+	<dict>
+		<key>A013CE80-D4DD-4745-8F28-E83C952B28BD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EA914D7E-EEC3-4FCA-8E3D-683321885DF0</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Open in Sublime Text</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8BCE066A-B29A-4248-9A8B-2B092F8102B2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>67E4917C-6FD9-4941-BC93-C7D773E6C774</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Reveal in Finder</string>
+			</dict>
+		</array>
+		<key>EA914D7E-EEC3-4FCA-8E3D-683321885DF0</key>
+		<array/>
+		<key>EBDB1583-AB8D-4114-81D4-17CAE41DF838</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EA914D7E-EEC3-4FCA-8E3D-683321885DF0</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Open in Sublime Text</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8BCE066A-B29A-4248-9A8B-2B092F8102B2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>67E4917C-6FD9-4941-BC93-C7D773E6C774</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Reveal In Finder</string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>AleXander</string>
+	<key>description</key>
+	<string>Designed to help with building alfred workflows efficiently.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Alfred Workflow Builder QuickRef</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>awf data</string>
+				<key>script</key>
+				<string>/usr/bin/ruby recent_downloads.rb "{query}"</string>
+				<key>title</key>
+				<string>Open Data Directory</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A013CE80-D4DD-4745-8F28-E83C952B28BD</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>open -a Sublime\ Text/ {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EA914D7E-EEC3-4FCA-8E3D-683321885DF0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>awf folder</string>
+				<key>script</key>
+				<string>/usr/bin/ruby recent_downloads_copy.rb "{query}"</string>
+				<key>title</key>
+				<string>Open Workflow Folder</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>EBDB1583-AB8D-4114-81D4-17CAE41DF838</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict/>
+			<key>type</key>
+			<string>alfred.workflow.action.browseinalfred</string>
+			<key>uid</key>
+			<string>8BCE066A-B29A-4248-9A8B-2B092F8102B2</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>67E4917C-6FD9-4941-BC93-C7D773E6C774</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Helps locate the files and folders that you most often need to access for building Alfred workflows by listing the files in the order which workflows or data directories you most recently used.
+
+This workflow was based of a previous workflow built by Dajun Duan.  His workflow can be located at the following link.
+
+https://github.com/ddjfreedom/recent-downloads-alfred-v2
+
+— — Controls — —
+Enter   — Browse in Alfred
+⌘ Enter — Reveal in Finder
+⌥ Enter — Open in Sublime Text</string>
+	<key>uidata</key>
+	<dict>
+		<key>67E4917C-6FD9-4941-BC93-C7D773E6C774</key>
+		<dict>
+			<key>ypos</key>
+			<real>370</real>
+		</dict>
+		<key>8BCE066A-B29A-4248-9A8B-2B092F8102B2</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+		<key>A013CE80-D4DD-4745-8F28-E83C952B28BD</key>
+		<dict>
+			<key>ypos</key>
+			<real>100</real>
+		</dict>
+		<key>EA914D7E-EEC3-4FCA-8E3D-683321885DF0</key>
+		<dict>
+			<key>ypos</key>
+			<real>100</real>
+		</dict>
+		<key>EBDB1583-AB8D-4114-81D4-17CAE41DF838</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>about.me/alexcory</string>
+</dict>
+</plist>
