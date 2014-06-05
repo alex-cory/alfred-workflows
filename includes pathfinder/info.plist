@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.customct.Test</string>
+	<key>connections</key>
+	<dict>
+		<key>177701BE-98FB-496E-A2DF-8886BC05F2D2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2354DA23-6D67-42E8-ADDA-46F7632E5779</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>2354DA23-6D67-42E8-ADDA-46F7632E5779</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9F3E25B9-6540-4C05-93DD-1FAC873512C4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3955D4D5-6D86-486C-85D1-DA239D248283</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>B4F2BF99-E84B-464C-AED4-B7CDA5937DD6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9F3E25B9-6540-4C05-93DD-1FAC873512C4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3955D4D5-6D86-486C-85D1-DA239D248283</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>E36DEC27-2D45-4E2B-9BF8-A49FC17F71B5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B4F2BF99-E84B-464C-AED4-B7CDA5937DD6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Richard Guay</string>
+	<key>description</key>
+	<string>Test Workflow</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>test</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Test Workflow</string>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>9F3E25B9-6540-4C05-93DD-1FAC873512C4</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on getPath()	-- get path to frontmost document	set frontPath to (path to frontmost application as text)		try		tell application (frontPath)			try				set p to (path of document 1) -- preview uses this style			on error				set p to (do shell script "ruby -rcgi -e 'print CGI.unescape ARGV[0][7..-1]' " &amp; quoted form of p)				if p starts with "localhost" then					set p to (file of document 1) -- keynote, pages uses this style				end if			end try		end tell		set p to POSIX path of p			on error				-- if all else fails try to get it through system events				tell application "System Events"			set theprocess to the first process whose frontmost is true			set thewindow to the value of attribute "AXFocusedWindow" of theprocess			set thefile to the value of attribute "AXDocument" of thewindow as string		end tell		tell application "System Events" to tell (process 1 where frontmost is true)			--	value of attribute "AXDocument" of window 1			--end tell						set p to result			set p to (do shell script "ruby -rcgi -e 'print CGI.unescape ARGV[0][9..-1]' " &amp; quoted form of p)		end tell			end try		return pend getPathon alfred_script(q)
+	set p to getPath()	-- get parent directory	do shell script "dirname " &amp; quoted form of p	return p
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>B4F2BF99-E84B-464C-AED4-B7CDA5937DD6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>test:getfilename</string>
+				<key>subtext</key>
+				<string>Test Workflow</string>
+				<key>text</key>
+				<string>A Test</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E36DEC27-2D45-4E2B-9BF8-A49FC17F71B5</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>php controller.php</string>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2354DA23-6D67-42E8-ADDA-46F7632E5779</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>test:phpgetpath</string>
+				<key>subtext</key>
+				<string>Test Workflow</string>
+				<key>text</key>
+				<string>Run the getpath script from PHP</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>177701BE-98FB-496E-A2DF-8886BC05F2D2</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>3955D4D5-6D86-486C-85D1-DA239D248283</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This workflow is created by Richard Guay. Visit http://customct.com/alfred-2-workflows for even more fun!</string>
+	<key>uidata</key>
+	<dict>
+		<key>177701BE-98FB-496E-A2DF-8886BC05F2D2</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>2354DA23-6D67-42E8-ADDA-46F7632E5779</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>3955D4D5-6D86-486C-85D1-DA239D248283</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>9F3E25B9-6540-4C05-93DD-1FAC873512C4</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>B4F2BF99-E84B-464C-AED4-B7CDA5937DD6</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>E36DEC27-2D45-4E2B-9BF8-A49FC17F71B5</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://customct.com/alfred-2-workflows</string>
+</dict>
+</plist>
