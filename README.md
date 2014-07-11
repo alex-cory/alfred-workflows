@@ -16,7 +16,7 @@ by [@zhaocai](https://github.com/zhaocai)
 
 Search and control menu bar items while also being able to see what keyboard shortcuts control what.  Awesome if you want to learn the keyboard shortcuts of an application.
 
-![alt text][key clue]
+!//[alt text][key clue]
 
 
 
@@ -33,17 +33,6 @@ by [@willfarrell](https://github.com/willfarrell)
 
 Searching Github for gists, repos, user repos, or repos starred by a user. 5000 requests per hour supported.
 ![alt text][github]
-
-
-### [Share](http://www.alfredforum.com/topic/1805-share-using-mountain-lion-built-in-sharing-version-111/) ([Download](https://raw.github.com/vdesabou/alfred-mountain-lion-builtin-sharing/master/MountainLionBuilt-inSharing.alfredworkflow))
-by[@vdesabou](https://github.com/vdesabou)
-
-This workflow is using the amazing command line terminal-share
-You can call directly share command (or use a hotkey) if you just want to share a message. If you want to share a file (image, video or any other kind), you can select it using a File Action, or set a hotkey. It currently supports all services except sinaweibo,youku and tudou (I can add them in a future release). Based on the type of the selected file, services proposed will change.
-
-**Commands Included:** `share {query}` (default), 
-
-![alt text][share]
 
 
 
@@ -75,12 +64,16 @@ by [@bevesce](https://github.com/bevesce)
 
 ![alt text][symbols]
 
+
+
 ### [caniuse](https://github.com/willfarrell/alfred-caniuse-workflow) ([Download](https://raw.github.com/willfarrell/alfred-caniuse-workflow/master/caniuse.alfredworkflow))
 by [@willfarrell](https://github.com/willfarrell)
 
 Alfred App Workflow for caniuse.com
 
 ![alt text][caniuse]
+
+
 
 ### [localhost](https://github.com/willfarrell/alfred-localhost-workflow) ([Download](https://raw.github.com/willfarrell/alfred-localhost-workflow/master/localhost.alfredworkflow))
 by [@willfarrell](https://github.com/willfarrell)
@@ -89,6 +82,8 @@ Toggle Localhost Services. IN DEV
 
 ![alt text][localhost]
 
+
+
 ### [StackOverflow](https://github.com/tzarskyz/Alfred-1) ([Download](https://github.com/tzarskyz/Alfred-1/blob/master/stackoverflow.alfredworkflow?raw=true))
 by [@tzarskyz](https://github.com/tzarskyz)
 
@@ -96,10 +91,14 @@ by [@tzarskyz](https://github.com/tzarskyz)
 
 ![alt text][st]
 
+
+
 ### [ssh](https://github.com/isometry/alfredworkflows/tree/master/net.isometry.alfred.ssh) ([Download](https://raw.github.com/isometry/alfredworkflows/master/ssh.alfredworkflow))
 by [@isometry](https://github.com/isometry)
 
 ![alt text][ssh]
+
+
 
 ### [Kill Process](https://github.com/nathangreenstein/alfred-process-killer) ([Download](https://github.com/nathangreenstein/alfred-process-killer/raw/master/Kill%20Process.alfredworkflow))
 by [@nathangreenstein](https://github.com/nathangreenstein)
@@ -108,6 +107,8 @@ by [@nathangreenstein](https://github.com/nathangreenstein)
 
 ![alt text][kill]
 
+
+
 ### [FontAwesome](https://github.com/ruedap/alfred2-font-awesome-workflow) ([Download](https://raw.github.com/ruedap/alfred2-font-awesome-workflow/master/Font%20Awesome.alfredworkflow))
 by [@ruedap](https://github.com/ruedap)
 
@@ -115,12 +116,16 @@ You can incremental search for Font Awesome Icon Fonts and paste it to front mos
 
 ![alt text][fontawesome]
 
+
+
 ### [Encode / Decode](https://github.com/willfarrell/alfred-encode-decode-workflow) ([Download](https://raw.github.com/willfarrell/alfred-encode-decode-workflow/master/encode-decode.alfredworkflow))
 by [@willfarrell](https://github.com/willfarrell)
 
 Using the keywords `encode {query}` or `decode {query}`, will transform your query strings through *base64*, *html*, *url*, and *utf-8* encode/decode. Pressing enter will copy the encoded/decoded string to the clipboard.
 
 ![alt text][encode]
+
+
 
 ### [Colors](https://github.com/TylerEich/Alfred-Extras) ([Download](https://github.com/TylerEich/Alfred-Extras/blob/master/Workflows/Colors.alfredworkflow))
 by [@TylerEich](https://github.com/TylerEich)
