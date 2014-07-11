@@ -1,4 +1,3 @@
-
 Download a copy of David Ferguson's workflows library (see libraries and helpers thread pinned in this forum). Include that.
 
  
@@ -8,8 +7,7 @@ Create a workflow with just a script filter for now. In it, have it be bash, and
 Create the snippets.php file in the workflow directory. Include David's workflows.
  
 Start a "first run" function that checks to make sure the data directory exists
-# WHERE IS THE DATA DIRECTORY? WHAT TYPE OF FILE/FOLDER IS IT? HOW DO YOU CREATE A DIRECTORY
-# WITH PHP?
+
 , and, if not, create it. Make sure that the data directory contains a settings file. 
 
 If not, create the file and open it in a text editor (just use some exec($cmd) functions to do this). It'll be easiest to have the settings file be some json (so you can use json_decode) with just a user: and key: fields.

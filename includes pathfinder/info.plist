@@ -74,7 +74,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>test</string>
+	<string>include</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -148,7 +148,7 @@ end alfred_script</string>
 				<key>script</key>
 				<string>php controller.php</string>
 				<key>type</key>
-				<integer>1</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
