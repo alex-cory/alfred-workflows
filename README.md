@@ -133,7 +133,7 @@ by [@TylerEich](https://github.com/TylerEich)
 [key clue]: http://imageshack.us/a/img208/2158/w36.gif "Sample result"
 [share]: http://goo.gl/iityYs "Sample result"
 [Dev Doctor]: http://imageshack.us/a/img843/209/xly.gif "Sample result"
-[domainr]: https://github.com/alex-cory/alfred-workflows/blob/master/domainr.png?raw=true "Sample result"
+[domainr]: https://raw.githubusercontent.com/alex-cory/alfred-workflows/master/alfred-workflows.png "Sample result"
 [caniuse]: https://raw.github.com/willfarrell/alfred-caniuse-workflow/master/screenshots/caniuse-browser.png "Sample result"
 [dash]: http://imageshack.us/a/img827/9299/1iqm.png  "Sample result"
 [encode]: https://raw.github.com/willfarrell/alfred-encode-decode-workflow/master/screenshots/encode.png  "Sample result"
