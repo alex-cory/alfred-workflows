@@ -8,7 +8,27 @@
 ## To Update
 Run [Monkey Patch](https://github.com/BenziAhamed/monkeypatch-alfred) using the keyword `mp`. **star this repo** to keep up to date on new versions and additional workflows.
 
+* * *
+
 ## Workflows
+
+### [URL Shortener](https://github.com/alex-cory/alfred-workflows/)([Download](https://github.com/alex-cory/alfred-workflows/raw/master/URL-Shortener/Shorten%20URL.alfredworkflow))
+
+by [@zhaocai](https://github.com/zhaocai)
+
+Instantly shorten a url with `⌥ + c`.  This totally maximizes the time it takes to shorten urls.
+
+![alt text][url shortener]
+
+* * *
+
+### [Domainr](https://github.com/dingyi/Alfred-Workflows) ([Download](https://github.com/dingyi/Alfred-Workflows/raw/master/Domainr/Domainr.alfredworkflow))
+by [@dingyi](https://github.com/dingyi)
+
+Search for domains to see if the are available! It will show green if available, red if not, and yellow if maybe.
+![alt text][domainr]
+
+* * *
 
 ### [Key Clue Search](https://github.com/zhaocai/alfred2-keylue-workflow)([Download](https://github.com/zhaocai/alfred2-keylue-workflow/archive/master.zip))
 
@@ -18,15 +38,7 @@ Search and control menu bar items while also being able to see what keyboard sho
 
 ![alt text][key clue]
 
-
-
-### [Domainr](https://github.com/dingyi/Alfred-Workflows) ([Download](https://github.com/dingyi/Alfred-Workflows/raw/master/Domainr/Domainr.alfredworkflow))
-by [@dingyi](https://github.com/dingyi)
-
-Search for domains to see if the are available! It will show green if available, red if not, and yellow if maybe.
-![alt text][domainr]
-
-
+* * *
 
 ### [Github](https://github.com/willfarrell/alfred-github-workflow) ([Download](https://raw.github.com/willfarrell/alfred-github-workflow/master/Github.alfredworkflow))
 by [@willfarrell](https://github.com/willfarrell)
@@ -34,7 +46,7 @@ by [@willfarrell](https://github.com/willfarrell)
 Searching Github for gists, repos, user repos, or repos starred by a user. 5000 requests per hour supported.
 ![alt text][github]
 
-
+* * *
 
 ### [Dash](http://kapeli.com/) ([Download Instructions](http://www.alfredforum.com/topic/1919-dash-documentation-for-80-apis/))
 
@@ -44,7 +56,7 @@ Dash comes with default Alfred 2 Workflow. This is an extension to that by short
 
 ![alt text][dash]
 
-
+* * *
 
 ### [Dev Doctor]() ([Download](https://github.com/sydlawrence/alfred-dev-doctor/archive/master.zip))
 
@@ -54,7 +66,7 @@ by [@sydlawrence](https://github.com/sydlawrence)
 
 ![alt text][Dev Doctor]
 
-
+* * *
 
 ### [Unicode Symbols Search]() ([Download](https://github.com/bevesce/unicode-symbols-search/raw/master/Symbols.alfredworkflow))
 
@@ -64,7 +76,7 @@ by [@bevesce](https://github.com/bevesce)
 
 ![alt text][symbols]
 
-
+* * *
 
 ### [caniuse](https://github.com/willfarrell/alfred-caniuse-workflow) ([Download](https://raw.github.com/willfarrell/alfred-caniuse-workflow/master/caniuse.alfredworkflow))
 by [@willfarrell](https://github.com/willfarrell)
@@ -73,7 +85,7 @@ Alfred App Workflow for caniuse.com
 
 ![alt text][caniuse]
 
-
+* * *
 
 ### [localhost](https://github.com/willfarrell/alfred-localhost-workflow) ([Download](https://raw.github.com/willfarrell/alfred-localhost-workflow/master/localhost.alfredworkflow))
 by [@willfarrell](https://github.com/willfarrell)
@@ -82,7 +94,7 @@ Toggle Localhost Services. IN DEV
 
 ![alt text][localhost]
 
-
+* * *
 
 ### [StackOverflow](https://github.com/tzarskyz/Alfred-1) ([Download](https://github.com/tzarskyz/Alfred-1/blob/master/stackoverflow.alfredworkflow?raw=true))
 by [@tzarskyz](https://github.com/tzarskyz)
@@ -91,14 +103,14 @@ by [@tzarskyz](https://github.com/tzarskyz)
 
 ![alt text][st]
 
-
+* * *
 
 ### [ssh](https://github.com/isometry/alfredworkflows/tree/master/net.isometry.alfred.ssh) ([Download](https://raw.github.com/isometry/alfredworkflows/master/ssh.alfredworkflow))
 by [@isometry](https://github.com/isometry)
 
 ![alt text][ssh]
 
-
+* * *
 
 ### [Kill Process](https://github.com/nathangreenstein/alfred-process-killer) ([Download](https://github.com/nathangreenstein/alfred-process-killer/raw/master/Kill%20Process.alfredworkflow))
 by [@nathangreenstein](https://github.com/nathangreenstein)
@@ -107,7 +119,7 @@ by [@nathangreenstein](https://github.com/nathangreenstein)
 
 ![alt text][kill]
 
-
+* * *
 
 ### [FontAwesome](https://github.com/ruedap/alfred2-font-awesome-workflow) ([Download](https://raw.github.com/ruedap/alfred2-font-awesome-workflow/master/Font%20Awesome.alfredworkflow))
 by [@ruedap](https://github.com/ruedap)
@@ -116,7 +128,7 @@ You can incremental search for Font Awesome Icon Fonts and paste it to front mos
 
 ![alt text][fontawesome]
 
-
+* * *
 
 ### [Encode / Decode](https://github.com/willfarrell/alfred-encode-decode-workflow) ([Download](https://raw.github.com/willfarrell/alfred-encode-decode-workflow/master/encode-decode.alfredworkflow))
 by [@willfarrell](https://github.com/willfarrell)
@@ -125,11 +137,12 @@ Using the keywords `encode {query}` or `decode {query}`, will transform your que
 
 ![alt text][encode]
 
-
+* * *
 
 ### [Colors](https://github.com/TylerEich/Alfred-Extras) ([Download](https://github.com/TylerEich/Alfred-Extras/blob/master/Workflows/Colors.alfredworkflow))
 by [@TylerEich](https://github.com/TylerEich)
 
+[url shortener]: https://raw.githubusercontent.com/alex-cory/alfred-workflows/master/URL-Shortener/url-shortener.gif "Sample result"
 [key clue]: http://imageshack.us/a/img208/2158/w36.gif "Sample result"
 [share]: http://goo.gl/iityYs "Sample result"
 [Dev Doctor]: http://imageshack.us/a/img843/209/xly.gif "Sample result"
